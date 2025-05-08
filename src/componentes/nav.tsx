@@ -6,7 +6,7 @@ import { MdArrowOutward } from 'react-icons/md';
 interface NavbarProps {
   brandName?: string;
   buttonText?: string;
-  hideOnScroll?: boolean; // New prop to toggle scroll behavior
+  hideOnScroll?: boolean; 
 }
 
 const Navbar: React.FC<NavbarProps> = ({
