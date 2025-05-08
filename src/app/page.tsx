@@ -27,9 +27,18 @@ export default function Home() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 items-center container mx-auto px-4 md:px-6 lg:px-20 mt-24">
         <div className="text-gray-800 flex flex-col items-center md:items-start text-center md:text-left">
-          <h1 className="text-4xl lg:text-6xl font-bold mb-1 text-gray-900 mt-10 ">
+         
+          <div className="relative h-[36px]  w-full  mt-10 flex items-center justify-center md:justify-start"> 
+
+            <div className="bg-amber-500 h-[26px] w-3/6">
+
+            </div>
+
+          <h1 className="absolute bottom-2 left-0 text-4xl lg:text-6xl font-bold mb-1 text-gray-800 text-center md:text-left w-full">
             Digital Products
           </h1>
+          </div>
+
           <h1 className="text-2xl lg:text-5xl font-semibold mb-4 text-amber-600">
             Creator Agency
           </h1>
@@ -110,7 +119,7 @@ export default function Home() {
       </div>
 
       <div className="container mx-auto px-4  md:px-6 lg:px-20 mt-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-8">
           <CardComponent
             title="UI UX Design"
             items={["Dashboard", "Profile", "Settings", "Notifications"]}
