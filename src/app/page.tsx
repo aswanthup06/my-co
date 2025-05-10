@@ -7,6 +7,7 @@ import Image from "next/image";
 import { MdArrowOutward } from "react-icons/md";
 import { useState } from 'react';
 import Modal from "@/componentes/Modal";
+import { motion } from "motion/react"
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,10 +29,11 @@ export default function Home() {
       <div className="grid grid-cols-1 md:grid-cols-2 items-center container mx-auto px-4 md:px-6 lg:px-20 mt-24">
         <div className="text-gray-800 flex flex-col items-center md:items-start text-center md:text-left">
          
+         <h1 className="text-cyan-800 font-bold mt-16">JUST TKINK, JUST CREATE</h1>
           <div className="relative h-[36px]  w-full  mt-10 flex items-center justify-center md:justify-start"> 
 
-            <div className="bg-amber-500 h-[26px] w-3/6">
-
+            <div className="h-[60px] w-3/6">
+                        <img src="images/under.svg" alt="" />
             </div>
 
           <h1 className="absolute bottom-2 left-0 text-4xl lg:text-6xl font-bold mb-1 text-gray-800 text-center md:text-left w-full">
@@ -70,12 +72,12 @@ export default function Home() {
           </div>
         </div>
 
-        <div>
+        <div className="flex justify-center">
           <Image
-            src="/images/main.png"
+            src="/images/main.svg"
             alt="Main content"
-            width={1200}
-            height={800}
+            width={500}
+            height={300}
             priority
           />
         </div>
@@ -119,7 +121,20 @@ export default function Home() {
       </div>
 
       <div className="container mx-auto px-4  md:px-6 lg:px-20 mt-8">
-        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-8">
+
+          <div className="text-center w-full flex flex-col items-center ">
+            <h1 className="text-2xl font-bold mb-2">What We Create</h1>
+            <h1 className="text-sm mb-6 text-gray-600 w-[40%]">
+              Ensure form fields are labeled correctly, with error states and
+              clear instructions, making it easy for all users to complete
+              forms.
+            </h1>
+          </div>
+
+
+
+
+        <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2 md:gap-8 mt-8">
           <CardComponent
             title="UI UX Design"
             items={["Dashboard", "Profile", "Settings", "Notifications"]}
