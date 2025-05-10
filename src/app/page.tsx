@@ -7,7 +7,7 @@ import Image from "next/image";
 import { MdArrowOutward } from "react-icons/md";
 import { useState } from 'react';
 import Modal from "@/componentes/Modal";
-import { motion } from "motion/react"
+// import { motion } from "motion/react"
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
